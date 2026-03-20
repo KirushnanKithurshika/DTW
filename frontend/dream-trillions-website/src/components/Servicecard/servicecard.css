@@ -170,7 +170,7 @@ margin-top: -40px;
 
 .servicecards-card{
 padding:28px 24px;
-text-align: justify;
+
 
 }
 
@@ -180,6 +180,7 @@ font-size:20px;
 
 .servicecards-desc{
 font-size:14px;
+text-align: justify;
 }
 
 }

@@ -7,14 +7,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 
 const Navbar: React.FC = () => {
-
   const [menuOpen, setMenuOpen] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
 
   const navRef = useRef<HTMLDivElement | null>(null);
   const location = useLocation();
-
-  /* close menu when clicking outside */
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
@@ -32,8 +29,6 @@ const Navbar: React.FC = () => {
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, [menuOpen, servicesOpen]);
 
-  /* close when route changes */
-
   useEffect(() => {
     setMenuOpen(false);
     setServicesOpen(false);
@@ -44,16 +39,11 @@ const Navbar: React.FC = () => {
 
   return (
     <nav className="navbar" ref={navRef}>
-
-      {/* Logo */}
-
       <div className="navbar-logo">
         <NavLink to="/">
           <img src={logo} alt="Dream Trillions Logo" />
         </NavLink>
       </div>
-
-      {/* Hamburger */}
 
       <div
         className={`hamburger ${menuOpen ? "open" : ""}`}
@@ -64,27 +54,24 @@ const Navbar: React.FC = () => {
         <span></span>
       </div>
 
-      {/* Links */}
-
       <ul className={`navbar-links ${menuOpen ? "show" : ""}`}>
-
         <li>
-          <NavLink to="/" className={navLinkClass}>Home</NavLink>
+          <NavLink to="/" className={navLinkClass}>
+            Home
+          </NavLink>
         </li>
 
         <li>
-          <NavLink to="/about" className={navLinkClass}>About Us</NavLink>
+          <NavLink to="/about" className={navLinkClass}>
+            About Us
+          </NavLink>
         </li>
-
-        {/* SERVICES */}
 
         <li className={`dropdown ${servicesOpen ? "open" : ""}`}>
-
           <div
             className="services-header"
             onClick={() => setServicesOpen(!servicesOpen)}
           >
-
             <NavLink
               to="/services"
               className={navLinkClass}
@@ -97,37 +84,42 @@ const Navbar: React.FC = () => {
               icon={faChevronDown}
               className="services-arrow"
             />
-
           </div>
 
           <ul className="dropdown-menu">
-
             <li><NavLink to="/services/software">Software Development</NavLink></li>
             <li><NavLink to="/services/web">Web Development</NavLink></li>
             <li><NavLink to="/services/mobile">Mobile App Development</NavLink></li>
             <li><NavLink to="/services/ui-ux">UI / UX Design</NavLink></li>
-            <li><NavLink to="/services/cloud">Cloud & IT Solutions</NavLink></li>
-            <li><NavLink to="/services/solar-installation">Renewable Energy solutions</NavLink></li>
-
+            <li><NavLink to="/services/cloud">Cloud &amp; IT Solutions</NavLink></li>
+            <li><NavLink to="/services/solar-installation">Renewable Energy Solutions</NavLink></li>
           </ul>
-
         </li>
 
-        <li><NavLink to="/portfolio" className={navLinkClass}>Portfolio</NavLink></li>
-        <li><NavLink to="/careers" className={navLinkClass}>Careers</NavLink></li>
-        <li><NavLink to="/blog" className={navLinkClass}>Blog</NavLink></li>
-        {/* <li><NavLink to="/contact" className={navLinkClass}>Contact</NavLink></li> */}
+        <li>
+          <NavLink to="/portfolio" className={navLinkClass}>
+            Portfolio
+          </NavLink>
+        </li>
 
+        <li>
+          <NavLink to="/careers" className={navLinkClass}>
+            Careers
+          </NavLink>
+        </li>
+
+        <li>
+          <NavLink to="/blog" className={navLinkClass}>
+            Blog
+          </NavLink>
+        </li>
       </ul>
-
-      {/* CTA */}
 
       <div className="navbar-cta">
         <NavLink to="/contact" className="cta-button">
           Get in touch
         </NavLink>
       </div>
-
     </nav>
   );
 };
