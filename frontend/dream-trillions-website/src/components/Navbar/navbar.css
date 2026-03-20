@@ -338,7 +338,7 @@
 /* VERY SMALL SCREEN */
 @media (max-width: 480px) {
   .navbar {
-    width: calc(100% - 12px);
+    width: 95%;
     padding: 7px 12px;
     border-radius: 18px;
     top: 8px;
