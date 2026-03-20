@@ -12,7 +12,7 @@
 .job-section-head {
   text-align: center;
   margin-bottom: 34px;
-  color:#334155;
+  color: #334155;
   font-size: 32px;
   font-weight: 800;
 }
@@ -156,15 +156,13 @@
 }
 
 .btn-outline {
-  border:none;
+  border: none;
   background: #e5f3ff;
   color: #2f4576;
 }
 
 .btn-outline:hover {
   background: #eaeaea;
-  
-  
 }
 
 .btn-apply {
@@ -176,8 +174,6 @@
 
 .btn-apply:hover {
   background-color: #362eca;
-  
- /* border:#103163 5px solid; */
   transform: translateY(-1px);
   box-shadow: 0 18px 28px rgba(15, 23, 42, 0.24);
 }
@@ -255,14 +251,13 @@
 
 .form-grid {
   display: grid;
-  grid-template-columns:1fr;
+  grid-template-columns: 1fr;
   gap: 18px 20px;
 }
 
 .form-group {
   display: flex;
   flex-direction: column;
-
 }
 
 .form-group label {
@@ -275,15 +270,12 @@
   font-weight: 700;
 }
 
-
-
 .form-group input,
 .form-group textarea,
 .form-group select {
   width: 100%;
   min-height: 52px;
-
-  border:none;
+  border: none;
   border-bottom: 1px solid #dbe2ea;
   background: #ffffff;
   color: #0f172a;
@@ -295,20 +287,17 @@
 
 .form-group textarea {
   min-height: 120px;
-
   resize: vertical;
 }
 
 .form-group input:focus,
 .form-group textarea:focus,
 .form-group select:focus {
-  border:none;
+  border: none;
   border-bottom: #362eca solid 2px;
-
 }
 
 .form-group input[readonly] {
-  
   color: #475569;
 }
 
@@ -322,7 +311,7 @@
   min-height: 48px;
   padding: 0 14px;
   border-radius: 14px;
-  border:none;
+  border: none;
   background: #ffffff;
   display: inline-flex;
   align-items: center;
@@ -362,7 +351,6 @@
   transform: translateY(-1px);
   box-shadow: 0 18px 30px rgba(15, 23, 42, 0.24);
   background-color: #362eca;
-  
 }
 
 .submit-btn:disabled {
@@ -382,88 +370,81 @@
   font-weight: 700;
 }
 
-/* ========== RESPONSIVE ========== */
 /* hide default input */
-.file-upload input{
-  display:none;
+.file-upload input {
+  display: none;
 }
 
 /* container */
-
-.file-upload-box{
-  width:200px;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:14px;
-
-  padding:14px 16px;
-
-  border:1px dashed #d0d7e2;
-  border-radius:12px;
-
-  background:#fafafa;
-
-  cursor:pointer;
-  transition:all .25s ease;
+.file-upload-box {
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  padding: 14px 16px;
+  border: 1px dashed #d0d7e2;
+  border-radius: 12px;
+  background: #fafafa;
+  cursor: pointer;
+  transition: all 0.25s ease;
 }
 
-.file-upload-box:hover{
-  border-color:#2563eb;
-  background:#f8fbff;
+.file-upload-box:hover {
+  border-color: #2563eb;
+  background: #f8fbff;
 }
 
 /* icon */
-
 .upload-icon-box {
   align-items: center;
-    width: 42px;
-    height: 42px;
-    min-width: 42px;
-    border-radius: 12px;
-  }
+  width: 42px;
+  height: 42px;
+  min-width: 42px;
+  border-radius: 12px;
+}
 
-  .upload-icon {
-    font-size: 30px;
-    color: #cdc9c9;
-  }
+.upload-icon {
+  font-size: 30px;
+  color: #cdc9c9;
+}
+
 /* text */
-
-.upload-text{
-  flex:1;
-  display:flex;
-  flex-direction:column;
+.upload-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
-.upload-title{
-  font-size:12px;
-  font-weight:600;
-  color:#111827;
+.upload-title {
+  font-size: 12px;
+  font-weight: 600;
+  color: #111827;
 }
 
-.upload-sub{
-  font-size:10px;
-  color:#6b7280;
+.upload-sub {
+  font-size: 10px;
+  color: #6b7280;
 }
 
 /* button */
-
-.upload-btn{
-  background:#111827;
-  color:white;
-  padding:6px 14px;
-  border-radius:6px;
-  font-size:12px;
-  font-weight:600;
+.upload-btn {
+  background: #111827;
+  color: white;
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
 }
 
-.file-upload-box:hover .upload-btn{
-  background:#2563eb;
+.file-upload-box:hover .upload-btn {
+  background: #2563eb;
 }
+
 @media (max-width: 992px) {
   .job-description-container {
     padding: 32px 18px 50px;
-      margin-top:-40px;
+    margin-top: -40px;
   }
 
   .job-card-main {
@@ -526,10 +507,10 @@
   .job-apply-form-container {
     padding: 24px 20px;
   }
+
   .job-apply-form {
-  width: 500px;
-}
-  
+    width: 500px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -545,13 +526,13 @@
 
   .form-header {
     font-size: 24px;
-    text-align:left;
+    text-align: left;
   }
 
   .form-subtext {
     font-size: 14px;
     margin-bottom: 18px;
-    text-align:left;
+    text-align: left;
   }
 
   .job-apply-form {
@@ -571,56 +552,55 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: stretch; /* ✅ no center */
+    align-items: stretch;
   }
 
   .form-group label {
     width: 100%;
-    font-size: 13px;
-    margin-bottom: 6px;
-    justify-content: flex-start; /* ✅ left */
+    font-size: 15px;
+    margin-bottom: 8px;
+    justify-content: flex-start;
   }
 
   .form-group input,
   .form-group textarea,
   .form-group select {
     width: 100%;
-    min-height: 44px;
-    font-size: 12px;
+    min-height: 46px;
+    font-size: 14px;
     padding: 0 10px;
   }
 
   .form-group textarea {
+    min-height: 120px;
     padding: 10px;
   }
 
-  /* Preferred contact */
   .checkbox-group {
     width: 100%;
     display: flex;
-    justify-content: flex-start; /* ✅ left */
+    justify-content: flex-start;
     align-items: center;
     gap: 10px;
     flex-wrap: wrap;
   }
 
   .check-option {
-    min-height: 34px;   /* ✅ smaller */
+    min-height: 36px;
     padding: 0 10px;
-    font-size: 12px;
+    font-size: 13px;
     border-radius: 10px;
     gap: 8px;
   }
 
   .check-option input {
-    width: 14px;       /* ✅ smaller checkbox */
+    width: 14px;
     height: 14px;
   }
 
-  /* Upload */
   .file-upload-box {
     width: 100%;
-    min-height: 72px;   /* ✅ smaller */
+    min-height: 72px;
     padding: 10px 12px;
     border-radius: 12px;
     gap: 10px;
@@ -639,17 +619,17 @@
   }
 
   .upload-title {
-    font-size: 12px;
+    font-size: 13px;
   }
 
   .upload-sub {
-    font-size: 10px;
+    font-size: 11px;
   }
 
   .submit-btn {
     width: 100%;
-    min-height: 44px;
-    font-size: 13px;
+    min-height: 46px;
+    font-size: 14px;
     border-radius: 12px;
     margin-top: 18px;
   }
@@ -674,18 +654,27 @@
     max-width: 100%;
   }
 
+  .form-group label {
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+
   .form-group input,
   .form-group textarea,
   .form-group select {
-    min-height: 40px;
-    font-size: 12px;
+    min-height: 44px;
+    font-size: 13px;
     padding: 0 8px;
   }
 
+  .form-group textarea {
+    padding: 10px 8px;
+  }
+
   .check-option {
-    min-height: 32px;
+    min-height: 34px;
     padding: 0 8px;
-    font-size: 11px;
+    font-size: 12px;
   }
 
   .check-option input {
@@ -710,11 +699,11 @@
   }
 
   .upload-title {
-    font-size: 11px;
+    font-size: 12px;
   }
 
   .upload-sub {
-    font-size: 9px;
+    font-size: 10px;
   }
 
   .submit-btn {
