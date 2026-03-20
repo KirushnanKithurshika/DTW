@@ -226,11 +226,13 @@
 
   .about-intro {
     font-size: 14px;
+    text-align: justify;
   }
 
   .about-card {
     padding: 18px;
     border-radius: 20px;
+    text-align: justify;
   }
 
   .about-right h2 {
@@ -254,5 +256,6 @@
   .about-why-card,
   .about-highlight-box {
     border-radius: 14px;
+    text-align: justify;
   }
 }

@@ -70,28 +70,8 @@ const JobCareers: React.FC = () => {
         "Ability to work independently and with a team.",
       ],
     },
-    {
-      title: "Software Engineer",
-      type: "Full-Time / Hybrid",
-      location: "Sri Lanka",
-      requirements: [
-        "Experience in web or software application development.",
-        "Good knowledge of React, TypeScript, Java, or related technologies.",
-        "Strong problem-solving and debugging skills.",
-        "Ability to collaborate on real-world projects.",
-      ],
-    },
-    {
-      title: "Project Manager",
-      type: "Full-Time",
-      location: "Sri Lanka",
-      requirements: [
-        "Experience managing teams and project timelines.",
-        "Strong communication and client-handling skills.",
-        "Ability to coordinate technical and business teams.",
-        "Good leadership and planning ability.",
-      ],
-    },
+    
+    
   ];
 
   const handleChange = (

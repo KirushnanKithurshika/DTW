@@ -1,5 +1,5 @@
-import React from "react";
 import "./footer.css";
+import { Link } from "react-router-dom";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -15,8 +15,7 @@ import {
   faInstagram
 } from "@fortawesome/free-brands-svg-icons";
 
-const Footer: React.FC = () => {
-
+const Footer = () => {
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
@@ -26,12 +25,8 @@ const Footer: React.FC = () => {
 
   return (
     <footer className="footer">
-
       <div className="footer-container">
-
-        {/* Company */}
         <div className="footer-col">
-
           <h2 className="footer-logo">Dream Trillions</h2>
 
           <p className="footer-text">
@@ -42,30 +37,33 @@ const Footer: React.FC = () => {
           </p>
 
           <div className="footer-social">
-            <a href="#"><FontAwesomeIcon icon={faFacebook} /></a>
-            <a href="#"><FontAwesomeIcon icon={faLinkedin} /></a>
-            <a href="#"><FontAwesomeIcon icon={faInstagram} /></a>
+            <a href="#" aria-label="Facebook">
+              <FontAwesomeIcon icon={faFacebook} />
+            </a>
+            <a href="#" aria-label="LinkedIn">
+              <FontAwesomeIcon icon={faLinkedin} />
+            </a>
+            <a href="#" aria-label="Instagram">
+              <FontAwesomeIcon icon={faInstagram} />
+            </a>
           </div>
-
         </div>
 
-        {/* Quick Links */}
         <div className="footer-col">
           <h3>Quick Links</h3>
           <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/services">Services</a></li>
-            <li><a href="/projects">Projects</a></li>
-            <li><a href="/about">About</a></li>
-            <li><a href="/contact">Contact</a></li>
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/services">Services</Link></li>
+            <li><Link to="/projects">Projects</Link></li>
+            <li><Link to="/about">About</Link></li>
+            <li><Link to="/contact">Contact</Link></li>
           </ul>
         </div>
 
-        {/* Services */}
         <div className="footer-col">
           <h3>Our Services</h3>
-          <ul>
-            <li>Software & Web Applications</li>
+          <ul className="footer-service-list">
+            <li>Software &amp; Web Applications</li>
             <li>Mobile App Development</li>
             <li>Artificial Intelligence</li>
             <li>Cloud Infrastructure</li>
@@ -73,7 +71,6 @@ const Footer: React.FC = () => {
           </ul>
         </div>
 
-        {/* Contact */}
         <div className="footer-col">
           <h3>Contact</h3>
 
@@ -83,21 +80,15 @@ const Footer: React.FC = () => {
             <p><FontAwesomeIcon icon={faEnvelope} /> info@dreamtrillions.com</p>
           </div>
         </div>
-
       </div>
 
-
-      {/* SCROLL TOP BUTTON */}
       <div className="footer-scroll-top" onClick={scrollToTop}>
         <FontAwesomeIcon icon={faArrowUp} />
       </div>
 
-
-      {/* Bottom bar */}
       <div className="footer-bottom">
         <p>© {new Date().getFullYear()} Dream Trillions (Pvt) Ltd. All Rights Reserved.</p>
       </div>
-
     </footer>
   );
 };
