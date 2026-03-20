@@ -21,7 +21,7 @@ const Services: React.FC = () => {
                         <div className="service-center">
                             <p className="service-badge">
                                 <TypeAnimation
-                                    sequence={["DREAM TRILLIONS", 2000]}
+                                    sequence={["DREAM TRILLIONS SERVICES", 2000]}
                                     speed={50}
                                     wrapper="span"
                                     repeat={0}
